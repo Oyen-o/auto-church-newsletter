@@ -1,0 +1,19 @@
+.newsletter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #0a0a23; // matches the dark navy text in the image
+
+  .newsletter-left {
+    text-transform: uppercase;
+  }
+
+  .newsletter-right {
+    text-transform: uppercase;
+  }
+}

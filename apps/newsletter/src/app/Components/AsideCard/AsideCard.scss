@@ -1,0 +1,131 @@
+.aside-card {
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  &__image {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  &__placeholder {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    background: #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #64748b;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  &__info {
+    flex: 1;
+  }
+  
+  &__title {
+    font-size: 1.5rem;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  &__subtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+  }
+  
+  &__description {
+    color: #475569;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+}
+
+/* Variant styles */
+.aside-card--preacher {
+  border-left-color: #7c3aed;
+  
+  .aside-card__title {
+    color: #7c3aed;
+  }
+}
+
+.aside-card--announcement {
+  border-left-color: #dc2626;
+  
+  .aside-card__title {
+    color: #dc2626;
+  }
+}
+
+.aside-card--event {
+  border-left-color: #059669;
+  
+  .aside-card__title {
+    color: #059669;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aside-card {
+    padding: 1.5rem;
+    
+    &__content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    &__image,
+    &__placeholder {
+      width: 100px;
+      height: 100px;
+    }
+    
+    &__title {
+      font-size: 1.3rem;
+    }
+    
+    &__subtitle {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .aside-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+    &__title {
+      font-size: 1.2rem;
+    }
+    
+    &__description {
+      font-size: 0.95rem;
+    }
+  }
+}
