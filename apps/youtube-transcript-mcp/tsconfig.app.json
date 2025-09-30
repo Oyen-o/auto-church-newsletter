@@ -1,8 +1,8 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "module": "nodenext",
+    "outDir": "../../apps/youtube-transcript-mcp/dist",
+    "module": "node20",
     "types": ["node"],
     "rootDir": "src",
     "moduleResolution": "nodenext",
@@ -17,6 +17,6 @@
     "src/**/*.test.ts",
     "eslint.config.js",
     "eslint.config.cjs",
-    "eslint.config.mjs"
+    "eslint.config.mjs",
   ]
 }

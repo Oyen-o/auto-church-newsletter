@@ -52,4 +52,4 @@ function isFile(s) {
 }
 
 // Call the user-defined main.
-module.exports = require('./youtube-transcript-mcp/src/main.js');
+module.exports = require('./apps/youtube-transcript-mcp/src/index.js');
