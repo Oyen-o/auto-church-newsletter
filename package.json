@@ -11,6 +11,7 @@
     "start:newsletter": "nx serve newsletter",
     "start:calendar": "nx serve calendar",
     "start:mcp": "nx serve youtube-transcript-mcp",
+    "start:mcp:inspect": "npx @modelcontextprotocol/inspector nx serve youtube-transcript-mcp",
     "dev": "nx serve newsletter",
     "dev:newsletter": "nx serve newsletter",
     "dev:calendar": "nx serve calendar",
@@ -26,6 +27,7 @@
   },
   "private": true,
   "dependencies": {
+    "@modelcontextprotocol/inspector": "^0.16.8",
     "@modelcontextprotocol/sdk": "^1.18.2",
     "@types/react-calendar": "^3.9.0",
     "react": "^19.0.0",

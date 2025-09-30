@@ -1,7 +1,8 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { ClientType, Innertube } from 'youtubei.js/web';
 import { z } from 'zod';
-import { TranscriptSegment } from './model';
+import { combineSegmentsIntoSentences, TranscriptSegment } from './model.js';
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 
 
 // Create server instance
@@ -14,22 +15,38 @@ const server = new McpServer({
 });
 
 // Add tool to server
-server.tool("get transcript from youtube video",
+server.tool("get_transcript", "Get transcript from YouTube video",
     {
         videoId: z.string().describe("YouTube video ID"),
         lang: z.string().optional().describe("Language code")
     }, async ({ videoId, lang }) => {
 
         try {
-            const transcript = await getTranscript(videoId, lang);
+            let transcript = await getTranscript(videoId, lang);
+            if(!transcript) {
+                return {
+                    content: [{
+                        type: "text",
+                        text: `No transcript found for video ID: ${videoId}`
+                    }]
+                };
+            } else {
+                transcript = combineSegmentsIntoSentences(transcript);
+                return {
+                    content: [{
+                        type: "text",
+                        text: JSON.stringify(transcript, null, 2)
+                    }]
+                };
+            };
+            
+        } catch (error:any) {
             return {
                 content: [{
                     type: "text",
-                    text: JSON.stringify(transcript, null, 2)
+                    text: `Error fetching transcript: ${error.message}`
                 }]
-            };
-        } catch (error:any) {
-            throw new Error(`Failed to get transcript: ${error.toString()}`);
+            };  
         }
     });
 
@@ -41,6 +58,7 @@ server.tool("get transcript from youtube video",
         return fetch(input, url)
         },
     })
+   
 
   let info = await yt.getInfo(videoId)
   let scriptInfo = await info.getTranscript();
@@ -49,7 +67,20 @@ server.tool("get transcript from youtube video",
     .filter((segment) => segment.snippet.text !== undefined)
     .map((segment) => ({
       text: segment.snippet.text || "",
-      startMs: parseInt(segment.start_ms),
-      endMs: parseInt(segment.end_ms),
+      startSecs: parseInt(segment.start_ms) / 1000,
+      endSecs: parseInt(segment.end_ms) / 1000,
     } as TranscriptSegment));
 }
+
+
+    
+    
+async function main() {
+    const transport = new StdioServerTransport();
+    await server.connect(transport);
+    console.error("Youtube transcript MCP Server running on stdio");
+}
+main().catch((error) => {
+    console.error("Fatal error in main():", error);
+    process.exit(1);
+});
