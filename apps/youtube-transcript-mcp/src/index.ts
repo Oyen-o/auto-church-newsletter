@@ -14,7 +14,7 @@ const server = new McpServer({
 });
 
 // Add tool to server
-server.tool("get transcript",
+server.tool("get transcript from youtube video",
     {
         videoId: z.string().describe("YouTube video ID"),
         lang: z.string().optional().describe("Language code")

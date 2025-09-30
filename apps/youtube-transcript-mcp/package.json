@@ -17,7 +17,7 @@
             "cjs"
           ],
           "bundle": false,
-          "main": "apps/youtube-transcript-mcp/src/main.ts",
+          "main": "apps/youtube-transcript-mcp/src/index.ts",
           "tsConfig": "apps/youtube-transcript-mcp/tsconfig.app.json",
           "assets": [
             "apps/youtube-transcript-mcp/src/assets"
