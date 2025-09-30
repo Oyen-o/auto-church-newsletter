@@ -17,10 +17,10 @@
             "cjs"
           ],
           "bundle": false,
-          "main": "youtube-transcript-mcp/src/main.ts",
-          "tsConfig": "youtube-transcript-mcp/tsconfig.app.json",
+          "main": "apps/youtube-transcript-mcp/src/main.ts",
+          "tsConfig": "apps/youtube-transcript-mcp/tsconfig.app.json",
           "assets": [
-            "youtube-transcript-mcp/src/assets"
+            "apps/youtube-transcript-mcp/src/assets"
           ],
           "esbuildOptions": {
             "sourcemap": true,
@@ -48,8 +48,8 @@
         "cache": true,
         "executor": "@nx/js:prune-lockfile",
         "outputs": [
-          "{workspaceRoot}/youtube-transcript-mcp/dist/package.json",
-          "{workspaceRoot}/youtube-transcript-mcp/dist/package-lock.json"
+          "{workspaceRoot}/apps/youtube-transcript-mcp/dist/package.json",
+          "{workspaceRoot}/apps/youtube-transcript-mcp/dist/package-lock.json"
         ],
         "options": {
           "buildTarget": "build"
@@ -61,7 +61,7 @@
         ],
         "cache": true,
         "outputs": [
-          "{workspaceRoot}/youtube-transcript-mcp/dist/workspace_modules"
+          "{workspaceRoot}/apps/youtube-transcript-mcp/dist/workspace_modules"
         ],
         "executor": "@nx/js:copy-workspace-modules",
         "options": {

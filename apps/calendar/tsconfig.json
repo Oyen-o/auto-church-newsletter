@@ -1,5 +1,6 @@
 {
   "files": [],
+  "extends": "../../tsconfig.base.json",
   "include": [],
   "references": [
     {
@@ -9,5 +10,4 @@
       "path": "./tsconfig.spec.json"
     }
   ],
-  "extends": "../../tsconfig.base.json"
 }

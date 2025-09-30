@@ -1,13 +1,11 @@
 {
-  "extends": "./tsconfig.base.json",
-  "compileOnSave": false,
   "files": [],
   "references": [
     {
-      "path": "./apps/newsletter"
+      "path": "./apps/youtube-transcript-mcp"
     },
     {
-      "path": "./apps/youtube-transcript-mcp"
+      "path": "./apps/newsletter"
     },
     {
       "path": "./apps/calendar"
