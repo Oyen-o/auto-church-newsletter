@@ -1,8 +1,6 @@
-export type TranscriptSegment = {
-  text: string;
-  startSecs: number;
-  endSecs: number;
-};
+import { 
+  TranscriptSegment,
+} from '@auto-church-newsletter/service-transcript';
 
 export function combineSegmentsIntoSentences(segments: TranscriptSegment[]): TranscriptSegment[] {
         if (!segments || segments.length === 0) return [];
@@ -19,7 +17,7 @@ export function combineSegmentsIntoSentences(segments: TranscriptSegment[]): Tra
             // Check if segment ends with sentence-ending punctuation
             if (/[.!?。！？]$/.test(segment.text.trim())) {
                 sentences.push({
-                    text: currentSentence.trim(),
+                    text: removeFillerWords(currentSentence.trim()),
                     startSecs: currentStartMs,
                     endSecs: currentEndMs
                 });
@@ -43,3 +41,21 @@ export function combineSegmentsIntoSentences(segments: TranscriptSegment[]): Tra
 
         return sentences;
 }
+
+export function removeFillerWords(text: string): string {
+    if (!text || text.trim().length === 0) return '';
+    
+    const fillerWords = new Set([
+        'um', 'uh', 'ah', 'er', 'hmm', 'uhm', 'umm', 'eh', 'oh', 'mhmm', 'mm-hmm', 'uh-huh'
+    ]);
+
+    return text
+        .split(/\s+/)
+        .filter(word => {
+            const cleanWord = word.toLowerCase().replace(/[^\w\s]/g, '');
+            return !fillerWords.has(cleanWord);
+        })
+        .join(' ')
+        .trim();
+}
+
