@@ -1,4 +1,4 @@
-import { ChurchServiceTranscript, BibleReference, SermonSegment } from "./types";
+import { ChurchServiceTranscript, BibleReference, SermonSegment, TranscriptSegment } from "./types";
 import { TranscriptUtils, isBibleVerseSegment, isSermonSegment } from "./utils";
 
 
@@ -89,9 +89,9 @@ export class SermonAnalyzer {
   }
   
   getSermonWordCount(): number {
-    const sermons = this.transcript.segments.filter(isSermonSegment);
-    return sermons.reduce((total: any, sermon: { content: any[]; }) => {
-      const words = sermon.content.reduce((segmentTotal: any, segment: { text: { split: (arg0: RegExp) => { (): any; new(): any; length: any; }; }; }) => {
+    const sermons:SermonSegment[] = this.transcript.segments.filter(isSermonSegment);
+    return sermons.reduce((total: number, sermon: { content: TranscriptSegment[]; }) => {
+      const words = sermon.content.reduce((segmentTotal: number, segment: { text: string; }) => {
         return segmentTotal + segment.text.split(/\s+/).length;
       }, 0);
       return total + words;

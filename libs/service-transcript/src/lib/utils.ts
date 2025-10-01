@@ -79,7 +79,7 @@ export class TranscriptUtils {
         type: T
     ): Extract<ServiceSegment, { type: T }>[] {
         return transcript.segments.filter(
-            (segment:any): segment is Extract<ServiceSegment, { type: T }> => segment.type === type
+            (segment:ServiceSegment): segment is Extract<ServiceSegment, { type: T }> => segment.type === type
         );
     }
 }

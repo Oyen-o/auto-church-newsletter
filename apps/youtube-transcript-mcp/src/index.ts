@@ -1,8 +1,9 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { ClientType, Innertube } from 'youtubei.js/web';
 import { z } from 'zod';
-import { combineSegmentsIntoSentences, TranscriptSegment } from './model.js';
+import { combineSegmentsIntoSentences } from './model.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+import { TranscriptSegment } from '@auto-church-newsletter/service-transcript';
 
 
 // Create server instance

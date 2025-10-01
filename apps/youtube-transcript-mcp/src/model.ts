@@ -1,8 +1,6 @@
-export type TranscriptSegment = {
-  text: string;
-  startSecs: number;
-  endSecs: number;
-};
+import { 
+  TranscriptSegment,
+} from '@auto-church-newsletter/service-transcript';
 
 export function combineSegmentsIntoSentences(segments: TranscriptSegment[]): TranscriptSegment[] {
         if (!segments || segments.length === 0) return [];

@@ -16,6 +16,11 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@auto-church-newsletter/source"]
+    "customConditions": ["@auto-church-newsletter/source"],
+    "paths": {
+      "@auto-church-newsletter/service-transcript": [
+        "./libs/service-transcript/src"
+      ]
+    }
   }
 }
