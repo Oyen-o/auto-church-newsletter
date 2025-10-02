@@ -8,9 +8,6 @@
       "path": "./apps/newsletter"
     },
     {
-      "path": "./apps/calendar"
-    },
-    {
       "path": "./libs/service-transcript"
     }
   ]

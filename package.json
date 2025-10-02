@@ -5,24 +5,23 @@
   "scripts": {
     "build": "nx run-many -t build",
     "build:newsletter": "nx build newsletter",
-    "build:calendar": "nx build calendar",
     "build:mcp": "nx build youtube-transcript-mcp",
+
     "start": "nx serve newsletter",
     "start:newsletter": "nx serve newsletter",
-    "start:calendar": "nx serve calendar",
     "start:mcp": "nx serve youtube-transcript-mcp",
     "start:mcp:inspect": "npx @modelcontextprotocol/inspector nx serve youtube-transcript-mcp",
+
     "dev": "nx serve newsletter",
     "dev:newsletter": "nx serve newsletter",
-    "dev:calendar": "nx serve calendar",
     "dev:mcp": "nx serve youtube-transcript-mcp",
+
     "test": "nx run-many -t test",
     "test:newsletter": "nx test newsletter",
-    "test:calendar": "nx test calendar",
     "test:mcp": "nx test youtube-transcript-mcp",
+
     "lint": "nx run-many -t lint",
     "lint:newsletter": "nx lint newsletter",
-    "lint:calendar": "nx lint calendar",
     "lint:mcp": "nx lint youtube-transcript-mcp"
   },
   "private": true,
