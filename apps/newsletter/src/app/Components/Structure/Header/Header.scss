@@ -6,7 +6,6 @@
   text-align: center;
   position: relative;
   border-top: #2563eb 4px solid;
-  border-bottom: #2563eb 4px solid;
   
   &__content {
     max-width: 800px;
@@ -14,7 +13,7 @@
   }
   
   &__church-name {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;

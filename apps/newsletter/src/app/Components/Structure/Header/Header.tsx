@@ -6,16 +6,12 @@ interface HeaderProps {
   title?: string;
   subtitle?: string;
   date?: string;
-  className?: string;
 }
 
-export const Header: React.FC<HeaderProps> = ({
-  churchName = "RCCG ---- Worship Center",
-  title = "Sunday Summary",
-  className = ""
+export const Header: React.FC<HeaderProps> = ({ churchName, title, subtitle, date
 }) => {
   return (
-    <header className={`header ${className}`}>
+    <header className="header">
       <div className="header__content">
         <h1 className="header__church-name">{churchName}</h1>
         <h2 className="header__title">{title}</h2>

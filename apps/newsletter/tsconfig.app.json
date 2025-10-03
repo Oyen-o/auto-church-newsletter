@@ -1,17 +1,21 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "../../dist",
     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "lib": ["dom"],
     "composite": true,
+  
     "types": [
       "node",
       "@nx/react/typings/cssmodule.d.ts",
       "@nx/react/typings/image.d.ts",
       "vite/client"
     ],
-    "rootDir": "src"
+    "rootDir": "../../",
   },
   "exclude": [
     "out-tsc",
@@ -29,5 +33,5 @@
     "eslint.config.cjs",
     "eslint.config.mjs"
   ],
-  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx","../../tsconfig.base.json"],
+"include": ["src/**/*.ts", "src/**/*.tsx", "../../libs/**/*.ts"],
 }
