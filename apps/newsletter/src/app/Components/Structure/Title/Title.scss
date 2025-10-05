@@ -2,13 +2,11 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: white;
-    border-bottom: #2563eb 4px solid;
-  
+  border-bottom: #e2e3e4 4px solid;
+  background-color: var(--color-light-bg-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0rem;
 
   font-family: Arial, sans-serif;
   font-weight: bold;

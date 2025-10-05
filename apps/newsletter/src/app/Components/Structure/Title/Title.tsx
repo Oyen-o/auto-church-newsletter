@@ -11,7 +11,7 @@ export const Title: FC<TitleProps> = ({ serviceTranscript }) => {
      return (
     <header className="newsletter-header sticky-header">
       <div className="newsletter-left">
-        Sunday Letter
+        Sunday newsletter
       </div>
       <div className="newsletter-center">
         <h1>{serviceTranscript?.title ?? 'Title'}</h1>

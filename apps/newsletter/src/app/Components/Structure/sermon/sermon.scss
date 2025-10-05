@@ -1,6 +1,51 @@
 .sermon-wrapper {
-    background-color: bisque;
     padding: 1rem;
-    min-height: 1000px;
-    max-width: 1400px;
+    display: flex;
+    align-items: flex-start;
+    width: 1400px;
+
+    gap: 4rem;
+    font-family: 'Roboto Slab', serif;
+
+    .sermon {
+        min-width: 35rem;
+        max-width: 40rem;
+        margin-left: 4rem;
+        min-height: 1000px;
+    }
+
+    .aside-left {
+        position: sticky;
+        top: 10rem;
+        width: min(26rem, 25vw); /* More responsive approach */
+        padding: 1.5rem;
+        margin-left: 5rem;
+        border-right: #e2e3e4 2px solid;
+    }
 }
+
+.verses {
+    border-bottom: #e2e3e4 4px solid;
+
+ li   {
+        display: inline-block;
+        margin: .5rem .5rem;
+        line-break: strict;
+    }
+}
+
+ .verse {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    list-style: none;
+    background-color: #e2e3e4;
+    padding: 0.25rem .5rem;
+    border: #e2e3e4 2px solid;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #babdbf;
+    }
+ }

@@ -1,0 +1,22 @@
+.announcement-wrapper {
+    padding: 1rem;
+    text-align: left;
+
+    h3 {
+        min-width: min-content;
+        
+    }
+
+    div {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+
+        .card {
+            background: none;
+        }
+    }
+}

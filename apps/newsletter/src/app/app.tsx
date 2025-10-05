@@ -6,11 +6,14 @@ import Sermon from './Components/Structure/sermon/sermon';
 import './app.scss';
 import mockTranscript from '../mock';
 
-React.useEffect(() => {
+
+export function App() {
+
+  React.useEffect(() => {
   const fetchData = async () => {
     // Simulate fetching data
     const response = await new Promise<ChurchServiceTranscript>((resolve) =>
-      setTimeout(() => resolve(mockTranscript ), 1000)
+      setTimeout(() => resolve(mockTranscript), 1000)
     );
     // Update state with fetched data
   };
@@ -18,7 +21,6 @@ React.useEffect(() => {
   fetchData();
 }, []);
 
-export function App() {
   return (
     <div className="app">
       {mockTranscript && (

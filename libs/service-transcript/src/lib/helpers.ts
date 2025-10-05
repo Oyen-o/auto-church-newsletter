@@ -1,4 +1,4 @@
-import { ChurchServiceTranscript, BibleReference, SermonSegment, TranscriptSegment } from "./types";
+import { ChurchServiceTranscript, BibleReference, SermonSegment, TranscriptSegment, BaseServiceSegment, BibleVerseSegment } from "./types";
 import { TranscriptUtils, isBibleVerseSegment, isSermonSegment } from "./utils";
 
 
@@ -101,13 +101,12 @@ export function getSermonDuration(transcript: ChurchServiceTranscript): number {
     return transcript.keyTopics || [];
   }
 
-  export function getBibleReferencesInSermon(transcript: ChurchServiceTranscript): BibleReference[] {
-    const sermons = transcript.segments.filter(isSermonSegment);
+  export function getBibleReferences(transcript: ChurchServiceTranscript): BibleReference[] {
+    const sermons = transcript.segments.filter(isBibleVerseSegment);
     const references: BibleReference[] = [];
 
-    sermons.forEach((sermon: SermonSegment) => {
-      if (sermon.mainText) references.push(sermon.mainText);
-      if (sermon.supportingTexts) references.push(...sermon.supportingTexts);
+    sermons.forEach((sermon: BibleVerseSegment ) => {
+      if (sermon.bibleRef) references.push(sermon.bibleRef);
     });
     
     return references;

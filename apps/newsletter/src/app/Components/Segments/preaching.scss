@@ -1,0 +1,12 @@
+.preaching {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 1rem;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+    }   
+}
