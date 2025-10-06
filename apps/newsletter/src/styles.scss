@@ -3,6 +3,16 @@
 // @import './assets/_variables.scss';
 @import './assets/_reboot.scss';
 
+:root {
+  --color-light-bg-primary: rgb(238, 238, 238);
+  --color-light-bg-secondary: rgb(118, 118, 118);
+  --color-accent: rgb(255, 102, 0);
+  --font-primary: 'Roboto Slab', serif;
+  --font-color-primary: rgb(51, 51, 51);
+  --font-color-secondary: rgb(102, 102, 102);
+  --link-gray: rgb(0, 0, 0, 0.6);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,13 +27,4 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
-
-:root {
-  --color-light-bg-primary: rgb(238, 238, 238);
-  --color-light-bg-secondary: rgb(118, 118, 118);
-  --color-accent: rgb(255, 102, 0);
-  --font-primary: 'Roboto Slab', serif;
-  --font-color-primary: rgb(51, 51, 51);
-  --font-color-secondary: rgb(102, 102, 102);
 }

@@ -1,20 +1,13 @@
 .aside-card {
   background: #f8fafc;
-  border-left: 4px solid #2563eb;
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   
-  &__content {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
   &__image {
     flex-shrink: 0;
-    width: 120px;
-    height: 120px;
+    width: 240px;
+    height: 240px;
     overflow: hidden;
     
     img {
@@ -26,12 +19,7 @@
   
   &__placeholder {
     flex-shrink: 0;
-    width: 120px;
-    height: 120px;
-    background: #e2e8f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: .75rem;
     font-weight: bold;
     color: #64748b;
     font-size: 0.9rem;

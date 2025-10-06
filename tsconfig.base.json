@@ -19,7 +19,9 @@
     "target": "es2022",
     "customConditions": ["@auto-church-newsletter/source"],
     "paths": {
-      "@auto-church-newsletter/service-transcript": ["./libs/service-transcript/src/index.ts"]
+      "@auto-church-newsletter/service-transcript": [
+        "./libs/service-transcript/src/index.ts"
+      ]
     }
   }
 }

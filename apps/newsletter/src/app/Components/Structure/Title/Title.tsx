@@ -9,7 +9,7 @@ interface TitleProps {
 
 export const Title: FC<TitleProps> = ({ serviceTranscript }) => {
      return (
-    <header className="newsletter-header sticky-header">
+    <header className="newsletter-header">
       <div className="newsletter-left">
         Sunday newsletter
       </div>

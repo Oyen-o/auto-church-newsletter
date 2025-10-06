@@ -1,26 +1,33 @@
 .sermon-wrapper {
     padding: 1rem;
     display: flex;
-    align-items: flex-start;
-    width: 1400px;
-
-    gap: 4rem;
+    justify-content: space-between;
+    width: 100%;
     font-family: 'Roboto Slab', serif;
 
     .sermon {
-        min-width: 35rem;
-        max-width: 40rem;
-        margin-left: 4rem;
-        min-height: 1000px;
+        position: sticky;
+        align-self: flex-start;
+        margin: 0 1rem;
+        top: 0;
+        z-index: 100;
+        min-width: min(50rem, 50vw); /* More responsive approach */
+        max-height: 300rem;
     }
 
     .aside-left {
-        position: sticky;
-        top: 10rem;
-        width: min(26rem, 25vw); /* More responsive approach */
+        z-index: 100;
+        width: min(20rem, 25vw); /* More responsive approach */
         padding: 1.5rem;
-        margin-left: 5rem;
         border-right: #e2e3e4 2px solid;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .aside-right {
+        width: min(16rem, 25vw); /* More responsive approach */
+        border-left: #e2e3e4 2px solid;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -37,15 +44,14 @@
  .verse {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    cursor: pointer;
     list-style: none;
-    background-color: #e2e3e4;
+    background-color: var(--link-gray);
     padding: 0.25rem .5rem;
-    border: #e2e3e4 2px solid;
-    border-radius: 4px;
     transition: background-color 0.3s ease;
+    width: 100%;
+    border-bottom-left-radius: 8px ;
 
     &:hover {
-        background-color: #babdbf;
+        // background-color: #babdbf;
     }
  }

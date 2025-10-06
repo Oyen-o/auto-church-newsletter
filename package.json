@@ -6,20 +6,20 @@
     "build": "nx run-many -t build",
     "build:newsletter": "nx build newsletter",
     "build:mcp": "nx build youtube-transcript-mcp",
-
+    "=========================": "================",
     "start": "nx serve newsletter",
     "start:newsletter": "nx serve newsletter",
     "start:mcp": "nx serve youtube-transcript-mcp",
     "start:mcp:inspect": "npx @modelcontextprotocol/inspector nx serve youtube-transcript-mcp",
-
+    "======================": "================",
     "dev": "nx serve newsletter",
     "dev:newsletter": "nx serve newsletter",
     "dev:mcp": "nx serve youtube-transcript-mcp",
-
+    "=======================": "================",
     "test": "nx run-many -t test",
     "test:newsletter": "nx test newsletter",
     "test:mcp": "nx test youtube-transcript-mcp",
-
+    "=====================": "================",
     "lint": "nx run-many -t lint",
     "lint:newsletter": "nx lint newsletter",
     "lint:mcp": "nx lint youtube-transcript-mcp"
@@ -32,10 +32,9 @@
     "react": "^19.0.0",
     "react-calendar": "^6.0.0",
     "react-dom": "19.0.0",
+    "react-player": "^3.3.3",
     "react-router-dom": "6.29.0",
-    "youtubei.js": "^15.1.1",
-
-    "@auto-church-newsletter/service-transcript": "*"
+    "youtubei.js": "^15.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
