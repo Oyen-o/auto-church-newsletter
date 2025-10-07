@@ -1,0 +1,19 @@
+.newsletter-header {
+  height: 4rem;
+  border-bottom: #e2e3e4 4px solid;
+  background-color: var(--color-light-bg-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #0a0a23; // matches the dark navy text in the image
+
+  .newsletter-left {
+    text-transform: uppercase;
+  }
+
+  .newsletter-right {
+    text-transform: uppercase;
+  }
+}

@@ -158,6 +158,7 @@ export type ServiceSegment =
 /**
  * Complete church service transcript structure
  */
+
 export interface ChurchServiceTranscript {
   videoId: string;
   title: string;

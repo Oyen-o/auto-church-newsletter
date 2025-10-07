@@ -1,5 +1,28 @@
 /* Your styles goes here. */
 .app {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  background-color: rgb(238, 238, 238);
+  color: var(--font-color-primary);
+}
+
+.pop-card {
+  background: rgb(223, 223, 223);
+  border-radius: 4px;
+  border-bottom: 4px solid #fff;
+  border-top: 4px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.timestamp-link {
+  color: rgb(223, 223, 223);
+  background-color: var(--link-gray);
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--font-color-primary);
+  }
 }

@@ -4,7 +4,7 @@
     "outDir": "../../apps/youtube-transcript-mcp/dist",
     "module": "node20",
     "types": ["node"],
-    "rootDir": "src",
+    "rootDir": "../../",
     "moduleResolution": "nodenext",
     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo"
   },

@@ -1,0 +1,47 @@
+.preaching {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+        margin-bottom: 1rem;
+        font-family: 'Roboto Slab', serif;
+        text-align: center;
+    }   
+
+    .keyTopics {
+        margin-top: 1rem;
+        width: 100%;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 1rem;
+
+        h4 {
+            margin-bottom: 0.5rem;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+
+            li {
+                margin-bottom: 0.5rem;
+                display: inline-block;
+                font-size: 1rem;
+                color: var(--font-color-secondary);
+                .dash {
+                    color: var(--color-accent);
+                }
+                &::after
+                {
+                    content: "";
+                }
+            }
+        }
+    }
+}

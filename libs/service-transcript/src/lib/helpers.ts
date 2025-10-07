@@ -1,4 +1,4 @@
-import { ChurchServiceTranscript, BibleReference, SermonSegment, TranscriptSegment } from "./types";
+import { ChurchServiceTranscript, BibleReference, SermonSegment, TranscriptSegment, BaseServiceSegment, BibleVerseSegment } from "./types";
 import { TranscriptUtils, isBibleVerseSegment, isSermonSegment } from "./utils";
 
 
@@ -74,11 +74,10 @@ export function timeConversionExample() {
 /**
  * Example: Creating a sermon-focused transcript analyzer
  */
-export class SermonAnalyzer {
-  constructor(private transcript: ChurchServiceTranscript) {}
-  
-  getSermonDuration(): number {
-    const sermons = this.transcript.segments.filter(isSermonSegment);
+
+
+export function getSermonDuration(transcript: ChurchServiceTranscript): number {
+    const sermons = transcript.segments.filter(isSermonSegment);
     if (sermons.length === 0) return 0;
     
     return sermons.reduce((total: number, sermon: { startTime: any; endTime: any; }) => {
@@ -87,9 +86,9 @@ export class SermonAnalyzer {
       return total + (endSecs - startSecs);
     }, 0);
   }
-  
-  getSermonWordCount(): number {
-    const sermons:SermonSegment[] = this.transcript.segments.filter(isSermonSegment);
+
+  export function getSermonWordCount(transcript: ChurchServiceTranscript): number {
+    const sermons = transcript.segments.filter(isSermonSegment);
     return sermons.reduce((total: number, sermon: { content: TranscriptSegment[]; }) => {
       const words = sermon.content.reduce((segmentTotal: number, segment: { text: string; }) => {
         return segmentTotal + segment.text.split(/\s+/).length;
@@ -97,23 +96,21 @@ export class SermonAnalyzer {
       return total + words;
     }, 0);
   }
-  
-  getMainThemes(): string[] {
-    return this.transcript.keyTopics || [];
+
+  export function getMainThemes(transcript: ChurchServiceTranscript): string[] {
+    return transcript.keyTopics || [];
   }
-  
-  getBibleReferencesInSermon(): BibleReference[] {
-    const sermons = this.transcript.segments.filter(isSermonSegment);
+
+  export function getBibleReferences(transcript: ChurchServiceTranscript): BibleReference[] {
+    const sermons = transcript.segments.filter(isBibleVerseSegment);
     const references: BibleReference[] = [];
 
-    sermons.forEach((sermon: SermonSegment) => {
-      if (sermon.mainText) references.push(sermon.mainText);
-      if (sermon.supportingTexts) references.push(...sermon.supportingTexts);
+    sermons.forEach((sermon: BibleVerseSegment ) => {
+      if (sermon.bibleRef) references.push(sermon.bibleRef);
     });
     
     return references;
   }
-}
 
 /**
  * Example usage of the analyzer

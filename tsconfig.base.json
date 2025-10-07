@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "rootDir": "./",
     "composite": true,
     "declarationMap": true,
     "emitDeclarationOnly": true,
@@ -19,7 +20,7 @@
     "customConditions": ["@auto-church-newsletter/source"],
     "paths": {
       "@auto-church-newsletter/service-transcript": [
-        "./libs/service-transcript/src"
+        "./libs/service-transcript/src/index.ts"
       ]
     }
   }
