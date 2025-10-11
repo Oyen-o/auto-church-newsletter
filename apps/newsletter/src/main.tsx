@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import * as ReactDOM from 'react-dom/client';
 import App from './app/app';
-import Callendar from './app/Components/Callendar/callendar';
+import Home from './app/Components/Routes/home';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,13 +11,12 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Callendar/>,
+    element: <Home/>,
   },
   {
-  path: '/newsletter',
-  element: <App/>,
+    path: '/newsletter',
+    element: <App/>,
   }
-
 ]);
 
 root.render(
