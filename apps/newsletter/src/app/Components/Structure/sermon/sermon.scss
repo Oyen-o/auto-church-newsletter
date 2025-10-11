@@ -18,13 +18,21 @@
     .aside-left {
         z-index: 100;
         width: min(20rem, 25vw); /* More responsive approach */
+        height: fit-content;
         padding: 1.5rem;
         border-right: #e2e3e4 2px solid;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        > div{
+            padding:.5rem .5rem 0 .5rem;
+            background-color: rgb(223, 223, 223);;
+            border-bottom-left-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
     }
 
     .aside-right {
         width: min(16rem, 25vw); /* More responsive approach */
+        height: fit-content;
         border-left: #e2e3e4 2px solid;
         padding: 1.5rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -32,9 +40,8 @@
 }
 
 .verses {
-    border-bottom: #e2e3e4 4px solid;
 
- li   {
+  li   {
         display: inline-block;
         margin: .5rem .5rem;
         line-break: strict;
@@ -48,10 +55,17 @@
     background-color: var(--link-gray);
     padding: 0.25rem .5rem;
     transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    transition: position 0.3s ease;
+    position: relative;
+    top: 0px;
     width: 100%;
-    border-bottom-left-radius: 8px ;
+    border-bottom-left-radius: 8px ;        
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     &:hover {
-        // background-color: #babdbf;
+        box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top: 3px;
+
     }
  }

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import './title.scss';
-import { ChurchServiceTranscript } from '../../../../../../../libs/service-transcript/src/lib/types';
+import { ChurchServiceTranscript } from '@auto-church-newsletter/service-transcript';
 
 
 interface TitleProps {

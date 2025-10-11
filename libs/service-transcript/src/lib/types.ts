@@ -83,6 +83,7 @@ export interface SermonSegment extends BaseServiceSegment {
   theme?: string;
   mainText?: BibleReference;
   supportingTexts?: BibleReference[];
+  summary?: string;
 }
 
 /**

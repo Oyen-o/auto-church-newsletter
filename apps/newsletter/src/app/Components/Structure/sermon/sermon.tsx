@@ -67,9 +67,9 @@ const Sermon: FC<SermonProps> = ({ serviceTranscript }) => {
       <div className="sermon-wrapper" id="sermon">
         {serviceTranscript ? (
           <>
-            <div className="aside-left">
+            <div className="aside-left pop-card">
               {printAnnouncements(serviceTranscript)}
-              <AsideCard name="John Doe" role="Pastor" imageUrl='./assets/pastor-1.png' />
+              <AsideCard name={serviceTranscript.pastor ?? '[COULDN\'T_PARSE]'} role="Pastor" imageUrl='./assets/pastor-1.png' />
             </div>
             <div className="sermon" id="sermon">
               {serviceTranscript?.segments.length ? (
@@ -94,7 +94,7 @@ const Sermon: FC<SermonProps> = ({ serviceTranscript }) => {
               )}
             </div>
 
-            <div className="aside-right">
+            <div className="aside-right pop-card">
               <h2>Verses</h2>
               <div className="verses">
                 <ul>{printBibleRefs(serviceTranscript)}</ul>

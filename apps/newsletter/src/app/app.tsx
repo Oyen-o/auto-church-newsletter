@@ -1,6 +1,5 @@
 import React from 'react';
 import { ChurchServiceTranscript } from '../../../../libs/service-transcript/src/lib/types';
-import Header from './Components/Structure/Header/Header';
 import Title from './Components/Structure/Title/Title';
 import Sermon from './Components/Structure/sermon/sermon';
 import './app.scss';
@@ -26,6 +25,7 @@ export function App() {
       {mockTranscript && (
         <>
           {/* <Header churchName={mockTranscript.church} title={mockTranscript.title} date={mockTranscript.date}></Header> */}
+
           <Title serviceTranscript={mockTranscript}></Title>
           <Sermon serviceTranscript={mockTranscript}></Sermon>
         </>
