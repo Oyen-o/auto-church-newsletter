@@ -14,6 +14,74 @@ padding-top: 6rem;
     margin-top: 0.5rem;
   }
 }
+.highlighted {
+  background-color: var(--color-accent);
+  color: var(--color-white-text);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.details-content{
+  background-color: var(--color-light-bg-primary);
+  border-radius: 0.5rem;
+  padding: .5rem;
+  ul{
+    list-style: none;
+    margin-top: 1rem;
+  }
+
+  h4,p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .topicList{
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .forward-button {
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 3px;
+    line-height: 1.5;
+    background-color: var(--color-accent);
+    color: var(--color-white-text);
+    padding: 0.5rem 1rem;
+  }
+
+  .secondary-button {
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1px solid var(--color-accent);
+    border-radius: 3px;
+    line-height: 1.5;
+    background-color: transparent;
+    color: var(--color-accent);
+    padding: 0.5rem 1rem;
+    
+    &:hover {
+      background-color: var(--color-accent);
+      color: var(--color-white-text);
+    }
+  }
+
+
+  .details-footer {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+  }
+}
+
+
 
 .rbt-input-multi {
   max-height: 157px;

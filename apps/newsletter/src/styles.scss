@@ -8,7 +8,7 @@
   --color-light-bg-primary: rgb(238, 238, 238);
   --color-white-text: rgb(255, 255, 255);
   --color-light-bg-secondary: rgb(118, 118, 118);
-  --color-accent: rgb(255, 102, 0);
+  --color-accent: #ff944d;
   --font-primary: 'Roboto Slab', serif;
   --font-color-primary: rgb(51, 51, 51);
   --font-color-secondary: rgb(102, 102, 102);
@@ -17,7 +17,6 @@
 
 #root {
   margin: 0 auto;
-  padding: 0 2rem 2rem 2rem;
   background-color: rgb(238, 238, 238);
   color: var(--font-color-primary);
   height: 100vh;
@@ -38,4 +37,18 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.icons {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+
+&.back-icon {
+    margin-top: -5px;
+    margin-right: 10px;
+    color: inherit;
+    background-image: url('assets/icons/arrow_back_left_return_icon.svg');
+  }
 }
