@@ -25,7 +25,6 @@ export function App() {
       {mockTranscript && (
         <>
           {/* <Header churchName={mockTranscript.church} title={mockTranscript.title} date={mockTranscript.date}></Header> */}
-
           <Title serviceTranscript={mockTranscript}></Title>
           <Sermon serviceTranscript={mockTranscript}></Sermon>
         </>
