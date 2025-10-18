@@ -26,13 +26,28 @@ const Preaching: FC<PreachingProps> = ({ sermonSegment, videoId, seekTime,keyTop
         <ReactPlayer ref={playerRef} src={`https://www.youtube.com/watch?v=${videoId}`}
           style={{ width: '50rem', height: 'auto', aspectRatio: '16/9' }} controls={true} />
       </div>
-      <div className='keyTopics'>
+      <div className='plates'>
+     <div className='plate keyTopics'>
         <h4>Topics</h4>
         <ul>
           {keyTopics?.map((topic:string, index:number) => (
             <li key={index}>{topic} <span className='dash'> - </span></li>
           )) ?? <li>No key topics available</li>}
         </ul>
+      </div>
+      <div className='plate summary'>
+        <h4>Summary</h4>
+        <div>{sermonSegment?.summary ?? 'No summary available'}</div>
+      </div>
+      <div className='plate scripture'>
+        <h4>Scripture</h4>
+        <p>{sermonSegment?.mainText ? `${sermonSegment.mainText.book} ${sermonSegment.mainText.chapter}:${sermonSegment.mainText.verse ?? sermonSegment.mainText.verses}` : 'No main text available'}</p>
+        <ul>
+          {sermonSegment?.supportingTexts?.map((text, index) => (
+            <li key={index}>{`${text.book} ${text.chapter}:${text.verse ?? text.verses}`}</li>
+          )) ?? <li>No supporting texts available</li>}
+        </ul>
+      </div>
       </div>
     </div>
   );

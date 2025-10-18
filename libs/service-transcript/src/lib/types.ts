@@ -3,6 +3,13 @@
  * Generated from Sunday Service transcripts and enhanced for comprehensive service analysis
  */
 
+export interface Topics {
+  date: string; // ISO date format: YYYY-MM-DD
+  keyTopics: string[];
+  serviceType: 'sunday_service' | 'midweek_service' | 'special_service' | 'conference' | 'retreat';
+  videoId: string; // Optional YouTube video ID
+}
+
 /**
  * Basic transcript segment with timing information
  */
@@ -83,6 +90,7 @@ export interface SermonSegment extends BaseServiceSegment {
   theme?: string;
   mainText?: BibleReference;
   supportingTexts?: BibleReference[];
+  summary?: string;
 }
 
 /**

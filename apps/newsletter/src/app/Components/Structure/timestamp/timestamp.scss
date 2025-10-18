@@ -1,15 +1,21 @@
 
 .seg-timestamp {
     position: relative;
+    top: 0px;
     padding: 1rem;
     margin-top: -8px;
     top: 0;
     left: 0;
     background: rgba(0,0,0,0.6);
+    transition: top 0.5s smooth 0s;
     color: #fff;
     padding: 4px 8px;
     border-bottom-left-radius: 8px;
     font-size: 0.9em;
     z-index: 10;
     cursor: pointer;
+
+    &:hover {
+        top: 3px;
+    }
 }

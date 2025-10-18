@@ -1,0 +1,136 @@
+// Slide Transition Component Styles
+
+.slide-transition-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform var(--slide-duration, 300ms) ease-in-out,
+              opacity var(--slide-duration, 300ms) ease-in-out;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+// Horizontal sliding animations
+.slide-horizontal {
+  &.slide-active {
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 2;
+  }
+
+  &.slide-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &.slide-right {
+    transform: translateX(100%);
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &.slide-transitioning {
+    opacity: 0.5;
+    z-index: 3;
+  }
+}
+
+// Vertical sliding animations
+.slide-vertical {
+  &.slide-active {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 2;
+  }
+
+  &.slide-left {
+    transform: translateY(-100%);
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &.slide-right {
+    transform: translateY(100%);
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &.slide-transitioning {
+    opacity: 0.5;
+    z-index: 3;
+  }
+}
+
+// Additional animation variants
+.slide-fade {
+  .slide-component {
+    transition: opacity var(--slide-duration, 300ms) ease-in-out;
+    transform: none !important;
+  }
+
+  .slide-active {
+    opacity: 1;
+  }
+
+  .slide-left,
+  .slide-right {
+    opacity: 0;
+  }
+}
+
+.slide-scale {
+  .slide-component {
+    transition: transform var(--slide-duration, 300ms) ease-in-out,
+                opacity var(--slide-duration, 300ms) ease-in-out;
+  }
+
+  .slide-active {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .slide-left,
+  .slide-right {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .slide-component {
+    transition-duration: calc(var(--slide-duration, 300ms) * 0.8);
+  }
+}
+
+// Accessibility - Reduced motion support
+@media (prefers-reduced-motion: reduce) {
+  .slide-component {
+    transition-duration: 0.1s;
+  }
+}
+
+// Dark mode support
+@media (prefers-color-scheme: dark) {
+  .slide-transition-container {
+    background-color: var(--dark-bg, #1a1a1a);
+  }
+}
+
+// High contrast mode
+@media (prefers-contrast: high) {
+  .slide-component {
+    border: 1px solid currentColor;
+  }
+}
