@@ -1,0 +1,35 @@
+[
+    {
+        "date": "2025-10-06",
+        "serviceType": "sunday_service",
+        "keyTopics": ["Divine Perfection", "Praise as Warfare", "Overcoming Fear", "Faithfulness of God", "Thanksgiving"]
+    },
+    {
+        "date": "2025-09-29",
+        "serviceType": "sunday_service",
+         "keyTopics": [
+            "Divine Fruitfulness",
+            "Faith and Trust in God",
+            "Being Born Again",
+            "Walking in the Spirit",
+            "Diligence and Hard Work",
+            "Patience in Waiting on God",
+            "God's Blessings for His Children"
+        ]
+    },
+    {
+        "date": "2025-09-22",
+        "serviceType": "sunday_service",
+        "keyTopics": ["Joy in the Lord", "Gratitude", "Worship", "God's Goodness", "Spiritual Renewal"]
+    },
+    {
+        "date": "2025-09-15",
+        "serviceType": "sunday_service",
+        "keyTopics": ["Walking in Faith", "Overcoming Doubt", "Trusting God's Plan", "Spiritual Strength", "Faith in Action"]
+    },
+    {
+        "date": "2025-09-08",
+        "serviceType": "sunday_service",
+        "keyTopics": ["God's Love", "Compassion", "Serving Others", "Community", "Christian Fellowship"]
+    }
+]

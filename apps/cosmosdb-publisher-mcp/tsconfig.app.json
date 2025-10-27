@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "../../apps/cosmosdb-publisher/dist",
+    "outDir": "../../apps/cosmosdb-publisher-mcp/dist",
     "module": "node20",
     "types": ["node"],
     "rootDir": "../../",

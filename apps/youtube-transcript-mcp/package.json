@@ -2,7 +2,7 @@
   "name": "@auto-church-newsletter/youtube-transcript-mcp",
   "version": "0.0.1",
   "private": true,
-  "implicitDependencies": ["service-transcript"],
+  "implicitDependencies": ["service-transcript-lib"],
   "nx": {
     "targets": {
       "build": {

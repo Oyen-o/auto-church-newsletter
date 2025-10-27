@@ -1,0 +1,213 @@
+{
+  "id": "eqZzNtcAUJY",
+  "videoId": "eqZzNtcAUJY",
+  "title": "Sunday Service - Divine Healing and Health: An Expression of Divine Perfection",
+  "date": "2025-10-26",
+  "church": "RCCG Cornerstone Worship Center",
+  "serviceType": "sunday_service",
+  "monthlyTheme": "Divine Perfection",
+  "scripture": "Psalm 138:7-8",
+  "keyTopics": ["Divine Healing", "Divine Health", "Faith", "Thanksgiving", "Compassion", "Perfection", "Holy Spirit", "Prayer"],
+  "segments": [
+    {
+      "type": "prayer",
+      "startTime": "0:00",
+      "endTime": "35:40",
+      "description": "Opening worship, praise, and prayer for families and church leadership.",
+      "content": [
+        {"text": "that we thank you. Give you glory. We worship you. We worship you. Please worship.", "startSecs": 1.36, "endSecs": 16.28},
+        {"text": "Say thank you. Say thank you. Worship you for all you have done. Father, we worship you.", "startSecs": 16.64, "endSecs": 24.92},
+        {"text": "Heavenly Father, we pray that you make a way for those who need a breakthrough. You bring clarity to situations in the name of Jesus.", "startSecs": 1431.22, "endSecs": 1584.36}
+      ],
+      "prayerType": "opening"
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "24:00",
+      "endTime": "24:30",
+      "description": "Ephesians 6:18 - Prayer for all saints",
+      "content": [
+        {"text": "Ephesians 6:18 says praying always with all prayer and supplication in the spirit and watching there onto with all perseverance and supplication for all saints.", "startSecs": 1431, "endSecs": 1460}
+      ],
+      "bibleRef": {"book": "Ephesians", "chapter": 6, "verse": 18}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "35:53",
+      "endTime": "36:43",
+      "description": "Lamentation 3:22 - God's mercy and faithfulness",
+      "content": [
+        {"text": "Book of Lamentation 3:22 says, \"It is by your mercy that we're not consumed. For your compassion fill it not, God, says they are new every morning. Great is thy faithfulness, God.", "startSecs": 2153.2, "endSecs": 2203.2}
+      ],
+      "bibleRef": {"book": "Lamentations", "chapter": 3, "verse": 22}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "41:09",
+      "endTime": "41:25",
+      "description": "Colossians 2:9-10 - Fullness of Godhead and completion in Christ",
+      "content": [
+        {"text": "Colossians 2:9. \"For in him dwells all the fullness of Godhead bodily.\" And he said, \"You are complete in him.\"", "startSecs": 2368.8, "endSecs": 2465.839}
+      ],
+      "bibleRef": {"book": "Colossians", "chapter": 2, "verses": "9-10"}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "45:58",
+      "endTime": "46:58",
+      "description": "Romans 8:1-2, 11 - No condemnation and life through the Spirit",
+      "content": [
+        {"text": "Romans 8:1. \"There is therefore now no condemnation in those who are in Christ Jesus, who do not walk according to the flesh, but according to the spirit.\" For the law of the spirit of life in Christ Jesus have made me free from the law of sin and death. Romans 8:11, \"But if the spirit of him who raised Jesus from dead dwells in you, he who raised Christ from the dead would also give life to your mortal bodies through his spirit who dwells in you.\"", "startSecs": 2763.52, "endSecs": 2818.079}
+      ],
+      "bibleRef": {"book": "Romans", "chapter": 8, "verses": "1-2, 11"}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "48:43",
+      "endTime": "49:38",
+      "description": "Mark 16:15-18 - Great Commission and signs following believers",
+      "content": [
+        {"text": "Mark 16:15. \"Go into all the world and preach the gospel to every creature. He who believe is baptized and will be saved. But he who does not believe will be condemned. And he says these signs will follow those who believe. In my name they will cast out demons. They will speak with new tongues and they will take up serpent. And if they drink anything deadly, it will by no means hurt them. They will lay hands on the sick. And they will recover.\"", "startSecs": 2923.28, "endSecs": 2978.72}
+      ],
+      "bibleRef": {"book": "Mark", "chapter": 16, "verses": "15-18"}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "50:05",
+      "endTime": "50:32",
+      "description": "Matthew 8:14-15 - Jesus heals Peter's mother-in-law",
+      "content": [
+        {"text": "Matthew 8:14 reads, \"Now when Jesus had come into Peter's house, he saw his wife mother lying sick with a fever. So he touched her hand and the fever left her and she arose and served them.\"", "startSecs": 3004.64, "endSecs": 3031.52}
+      ],
+      "bibleRef": {"book": "Matthew", "chapter": 8, "verses": "14-15"}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "52:18",
+      "endTime": "52:48",
+      "description": "2 Corinthians 5:17 - New creation in Christ",
+      "content": [
+        {"text": "2 Corinthians 5:17, \"Therefore, if anyone is in Christ, he is a new creation. Old things have passed away. Behold, all things have become new.\"", "startSecs": 3138.64, "endSecs": 3168}
+      ],
+      "bibleRef": {"book": "2 Corinthians", "chapter": 5, "verse": 17}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "53:47",
+      "endTime": "54:08",
+      "description": "Psalm 103:1-5 - Benefits of serving God including healing",
+      "content": [
+        {"text": "Psalm 103 verse one: \"Bless the Lord my soul and all that is within me bless his holy name. Bless the Lord, my soul, and forget not all his benefit. Who forgives all your iniquities. Who heals all your diseases. Who redeems your life from destruction. Who crowns you with loving kindness and tender mercies. Who satisfy your mouth with good things. So that your youth is renewed like the eagles.\"", "startSecs": 3227.359, "endSecs": 3248.24}
+      ],
+      "bibleRef": {"book": "Psalm", "chapter": 103, "verses": "1-5"}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "55:35",
+      "endTime": "55:59",
+      "description": "Acts 3:1-7 - Peter heals the lame man",
+      "content": [
+        {"text": "Acts chapter 3 verse one: Peter and John went up together to the temple at the hour of prayer... Peter said, \"Silver and gold I do not have. But what I do have, I give you in the name of Jesus Christ. Rise up and walk.\"", "startSecs": 3335.119, "endSecs": 3355.76}
+      ],
+      "bibleRef": {"book": "Acts", "chapter": 3, "verses": "1-7"}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "59:06",
+      "endTime": "60:28",
+      "description": "Psalm 91:9-16 - God's protection and long life",
+      "content": [
+        {"text": "Psalm 91 verse 9: \"Because you have made the Lord who is my refuge, even the most high your dwelling place, no evil shall befall you. Nor shall any plague come near your dwelling. For he shall give his angel charge over you to keep you in all your ways... With long life will I satisfy him and show him my salvation.\"", "startSecs": 3546.16, "endSecs": 3628.24}
+      ],
+      "bibleRef": {"book": "Psalm", "chapter": 91, "verses": "9-16"}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "62:01",
+      "endTime": "65:10",
+      "description": "Ezekiel 37:1-14 - Vision of dry bones coming to life",
+      "content": [
+        {"text": "Ezekiel 37 verse one: \"The hand of the Lord came upon me and brought me out in the spirit of the Lord and set me down in the midst of the valley, and it was full of bones... Son of man, can this bone live?... Prophesy to these bones and say to them, dry bone, hear the word of the Lord... I will put my spirit in you, and you shall live.\"", "startSecs": 3721.76, "endSecs": 3965.119}
+      ],
+      "bibleRef": {"book": "Ezekiel", "chapter": 37, "verses": "1-14"}
+    },
+    {
+      "type": "bible_verse",
+      "startTime": "68:33",
+      "endTime": "69:41",
+      "description": "Malachi 3:10 - Bringing tithes into the storehouse",
+      "content": [
+        {"text": "In Malachi 3:10 it says, \"Bring all the tithes into the storehouse that there may be food in my house and try me now in this, says the Lord of hosts, if I will not open for you the windows of heaven and pour out such a blessing to you.\"", "startSecs": 4113.09, "endSecs": 4181.52}
+      ],
+      "bibleRef": {"book": "Malachi", "chapter": 3, "verse": 10}
+    },
+    {
+      "type": "sermon",
+      "startTime": "36:48",
+      "endTime": "68:32",
+      "description": "Sermon on divine healing and health as an expression of divine perfection.",
+      "speaker": "Minister",
+      "title": "Divine Healing and Health: The Expression of Divine Perfection",
+      "theme": "Divine Perfection",
+      "mainText": {"book": "Colossians", "chapter": 2, "verses": "9-10"},
+      "supportingTexts": [
+        {"book": "Romans", "chapter": 8, "verses": "1-2, 11"},
+        {"book": "Mark", "chapter": 16, "verses": "15-18"},
+        {"book": "Matthew", "chapter": 8, "verses": "14-15"},
+        {"book": "2 Corinthians", "chapter": 5, "verse": 17},
+        {"book": "Psalm", "chapter": 103, "verses": "1-5"},
+        {"book": "Ezekiel", "chapter": 37, "verses": "1-14"}
+      ],
+      "summary": "The sermon powerfully establishes that divine healing and health are not optional benefits but fundamental expressions of God's perfection available to every believer. Through scriptural foundations in Colossians 2:9-10 and Romans 8:1-2, 11, the message demonstrates that believers are complete in Christ and empowered by the same Spirit that raised Jesus from the dead. The preacher emphasizes that sickness is spiritual bondage incompatible with God's nature, and that through faith, believers should walk in divine health daily rather than merely seeking healing when sick. Personal testimony and biblical examples, including the dry bones of Ezekiel 37 and Jesus' healing ministry, illustrate that God's power transcends physical limitations when believers understand their identity in Christ and operate in faith, making divine health a present reality rather than a future hope.",
+      "content": [
+        {"text": "So I'm going to be sharing a message with us today... Divine healing and health being an expression of divine perfection. Amen.", "startSecs": 2208.48, "endSecs": 2249.04},
+        {"text": "You know and it's really true. A lot of Christians we believe that God heals and God can heal you. We believe that Jesus died for us.", "startSecs": 2249.04, "endSecs": 2260.64},
+        {"text": "So the question is why then do we struggle with this things? And the truth of the matter is that if God cannot lie, then it must be us.", "startSecs": 2309.68, "endSecs": 2320.56},
+        {"text": "You know, healing is this. Listen, I'll say this. Divine healing is not difficult if you understand who you are in Christ.", "startSecs": 2610.64, "endSecs": 2629.68},
+        {"text": "Look, divine healing is a supernatural repair of a damaged body... But then divine health is different.", "startSecs": 2689.52, "endSecs": 2758},
+        {"text": "The spirit of God is there to quicken you. Hallelujah. No matter what that sickness is because the spirit of life, listen, God does not dwell in dead bodies.", "startSecs": 2818.079, "endSecs": 2877.28},
+        {"text": "Your DNA changed the day you gave your life to Jesus. Hallelujah. I'll say it again. Your DNA changed the way you gave your life to Jesus. Amen.", "startSecs": 3168, "endSecs": 3180.16}
+      ]
+    },
+    {
+      "type": "offering",
+      "startTime": "68:33",
+      "endTime": "72:43",
+      "description": "Offering and tithes collection with multiple giving options.",
+      "content": [
+        {"text": "It is now offering time. In Malachi 3:10 it says, \"Bring all the tithes into the storehouse that there may be food in my house and try me now in this, says the Lord of hosts, if I will not open for you the windows of heaven and pour out such a blessing to you.\" Amen. Okay. On the on the screen, we have several ways that you can give. You can give through Giblify. You can give through zeal. You can give by check. For for those of you you at home, you can, you know, put it in an envelope and you can mail it to us if you're watching online or you can use our electronic versions of giving.", "startSecs": 4113.09, "endSecs": 4246.239}
+      ],
+      "offeringType": "tithes"
+    },
+    {
+      "type": "announcement",
+      "startTime": "73:51",
+      "endTime": "77:02",
+      "description": "Church announcements including pastor's return, monthly theme, meetings, and memorial service.",
+      "content": [
+        {"text": "It is time for the announcements. do we have anybody worshiping with us for the first time? I don't think I see any new faces. If there is anybody watching us that is worshiping with us for the first time, we welcome you today into our midst. we are RCCG connoisseurs center and if you're looking for a home base we also welcome you to join us. let's get into the announcements. the theme for the month of September is divine sorry October is divine perfection. Our text is taken from Psalm 138 from verse 7 to verse 8. Workers meeting old every Sunday by 9:15 a.m. It is composed that every worker be in attendance. Sunday school holds by 9:45 a.m. every Sunday. Do well to join us next Sunday. We meet on every Wednesdays for midweek service through Zoom. the time is from 6:30 p.m. to 7:45 p.m. And we encourage everyone to join us. look out for the Zoom link that is sent on the WhatsApp community page so you can join us every Wednesday. The church miss to pray online every Monday from 6:00 a.m. to 6:30 a.m. and every Friday from 6:00 p.m. to 6:30 p.m. please join us on 48-9008931. the prayer is for every member of the church, not just the prayer team only. We owed an outreach to the homeless every first Tuesday of the month. Kindly reach out to Dickines Mariah. If you would like to be a part of it, kindly follow us on our social media pages. on Instagram, we go by RCCG CWC Mesa. On YouTube, we go by CWCTV. On Facebook, it is the Cornerstone Worship Center. And we also have the wor the WhatsApp community page. If anyone is not currently on that, please scan the QR code on the screen so you can be a partic of that. And it looks like we do have one more announcement. go ahead. we have the memorial and thanksgiving service of our beloved father Olu Kawc that is on November the 1st. that is next Saturday. Yes. no. The two weeks the pre the next the upcoming Saturday. from 3:00 p.m. to 5:00 p.m. the address or it's going to be here at the church. and then there's no phone number to ours. We don't need to call or anything. Just okay. Just show up. we encourage everyone to come to celebrate the life of our father. can we all rise as we bring the service to close?", "startSecs": 4430.76, "endSecs": 4622.04}
+      ],
+      "category": "general"
+    },
+    {
+      "type": "prayer",
+      "startTime": "77:02",
+      "endTime": "79:04",
+      "description": "Closing prayers and benediction for divine healing, protection, and blessings.",
+      "content": [
+        {"text": "Let's all rise. Can we all bow our heads in prayer? We thank you, God, for our beautiful beginning today. And we thank you again for bringing us to a perfect close. We trusted in your will and in your presence. And we are grateful, God, that we leave fulfilled and in divine perfection today. We thank you for having chosen us out of the multitudes to be a partaker of your blessings today. For without you, we are nothing and without you, we can accomplish nothing. We thank you, God, for your goodness and for how far you have brought us and how far you have taken us. We are grateful, Lord, for the word that we have heard today. And we thank you, God, for the ones that you have chosen to be instruments to share your word with us. We pray that the words that we have heard today shall be sown and shall bear fruit in Jesus name. We pray that your anointing and your presence will never depart from them in Jesus name. We pray Lord for your divine healing today. Any part of our body and any aspect of our life that is sick, we pray that you Lord shall send your healing power upon us in Jesus name. May we never be sick in Jesus name. We pray once more that we be perfect in you God and you Lord perfect all that concerns us in Jesus name. God may your face continually shine upon us. May you be ever gracious unto us God. May you turn your face to us God and give us peace. We pray that you fill us with all the joy and the peace and the blessings and the preservation and the protection in Jesus name. Lord guide us in Jesus name in this coming week and in the coming months. We pray for your guidance. We pray for your protection. We pray for your blessings. We pray for your breakthroughs. God, we commit our going out and our coming in into you. God, we pray for your protection in Jesus name. Lord, bless the works of our hands. May we never labor in vain in Jesus name. And we pray once more. I pray.", "startSecs": 4622.4, "endSecs": 4744.4}
+      ],
+      "prayerType": "closing"
+    }
+  ],
+  "duration": "1:19:04",
+  "pastor": "Pastor (traveling, returning end of week)",
+  "guestSpeakers": ["Minister (main sermon)"],
+  "metadata": {
+    "transcriptionSource": "youtube",
+    "transcriptionDate": "2025-10-26",
+    "transcribedBy": "GitHub Copilot with MCP tools",
+    "accuracy": 95,
+    "tags": ["structured", "auto-segmented", "church-service", "divine-healing", "bible-verses-separated"]
+  }
+}

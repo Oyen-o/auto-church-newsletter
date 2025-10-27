@@ -2,7 +2,7 @@
   "name": "@auto-church-newsletter/cosmosdb-publisher",
   "version": "0.0.1",
   "private": true,
-  "implicitDependencies": ["service-transcript"],
+  "implicitDependencies": ["service-transcript-lib"],
   "nx": {
     "targets": {
       "build": {
@@ -13,15 +13,15 @@
         "defaultConfiguration": "production",
         "options": {
           "platform": "node",
-          "outputPath": "cosmosdb-publisher/dist",
+          "outputPath": "cosmosdb-publisher-mcp/dist",
           "format": [
             "cjs"
           ],
           "bundle": false,
-          "main": "apps/cosmosdb-publisher/src/index.ts",
-          "tsConfig": "apps/cosmosdb-publisher/tsconfig.app.json",
+          "main": "apps/cosmosdb-publisher-mcp/src/index.ts",
+          "tsConfig": "apps/cosmosdb-publisher-mcp/tsconfig.app.json",
           "assets": [
-            "apps/cosmosdb-publisher/src/assets"
+            "apps/cosmosdb-publisher-mcp/src/assets"
           ],
           "esbuildOptions": {
             "sourcemap": true,
@@ -49,8 +49,8 @@
         "cache": true,
         "executor": "@nx/js:prune-lockfile",
         "outputs": [
-          "{workspaceRoot}/apps/cosmosdb-publisher/dist/package.json",
-          "{workspaceRoot}/apps/cosmosdb-publisher/dist/package-lock.json"
+          "{workspaceRoot}/apps/cosmosdb-publisher-mcp/dist/package.json",
+          "{workspaceRoot}/apps/cosmosdb-publisher-mcp/dist/package-lock.json"
         ],
         "options": {
           "buildTarget": "build"
@@ -62,7 +62,7 @@
         ],
         "cache": true,
         "outputs": [
-          "{workspaceRoot}/apps/cosmosdb-publisher/dist/workspace_modules"
+          "{workspaceRoot}/apps/cosmosdb-publisher-mcp/dist/workspace_modules"
         ],
         "executor": "@nx/js:copy-workspace-modules",
         "options": {
@@ -84,15 +84,15 @@
           "build"
         ],
         "options": {
-          "buildTarget": "@auto-church-newsletter/cosmosdb-publisher:build",
+          "buildTarget": "@auto-church-newsletter/cosmosdb-publisher-mcp:build",
           "runBuildTargetDependencies": false
         },
         "configurations": {
           "development": {
-            "buildTarget": "@auto-church-newsletter/cosmosdb-publisher:build:development"
+            "buildTarget": "@auto-church-newsletter/cosmosdb-publisher-mcp:build:development"
           },
           "production": {
-            "buildTarget": "@auto-church-newsletter/cosmosdb-publisher:build:production"
+            "buildTarget": "@auto-church-newsletter/cosmosdb-publisher-mcp:build:production"
           }
         }
       },

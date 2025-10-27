@@ -16,7 +16,6 @@ const COSMOS_CONFIG = {
   endpoint:
     process.env.COSMOS_ENDPOINT ||
     'https://ch-newsletter.documents.azure.com:443/',
-  key: process.env.COSMOS_KEY || '',
   databaseId: process.env.COSMOS_DATABASE || 'Sermons',
   containerId: process.env.COSMOS_CONTAINER || 'StructuredTranscript',
 };
@@ -60,7 +59,7 @@ class CosmosDBPublisher {
       ? `https://${accountName}.documents.azure.com:443/`
       : COSMOS_CONFIG.endpoint;
 
-    const key = apiKey || COSMOS_CONFIG.key;
+    const key = apiKey || process.env.COSMOS_KEY;
 
     if (!key) {
       throw new McpError(
@@ -79,7 +78,7 @@ class CosmosDBPublisher {
     this.server.setRequestHandler(ListToolsRequestSchema, async () => ({
       tools: [
         {
-          name: 'upload_transcript_to_cosmos',
+          name: 'upload_structured_transcript_to_cosmos_database',
           description:
             'Upload a YouTube transcript JSON file to Azure Cosmos DB',
           inputSchema: {
