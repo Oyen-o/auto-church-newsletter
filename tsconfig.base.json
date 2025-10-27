@@ -20,7 +20,7 @@
     "customConditions": ["@auto-church-newsletter/source"],
     "paths": {
       "@auto-church-newsletter/service-transcript": [
-        "./libs/service-transcript/src/index.ts"
+        "./libs/service-transcript-lib/src/index.ts"
       ]
     }
   }

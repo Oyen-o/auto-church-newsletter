@@ -11,7 +11,7 @@
       "path": "./apps/newsletter"
     },
     {
-      "path": "./libs/service-transcript"
+      "path": "./libs/service-transcript-lib"
     }
   ]
 }
