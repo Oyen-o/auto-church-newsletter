@@ -1,4 +1,4 @@
-import { ChurchServiceTranscript, BibleReference, SermonSegment, TranscriptSegment, BaseServiceSegment, BibleVerseSegment } from "./types";
+import { ChurchServiceTranscript, BibleReference, SermonSegment, TranscriptSegment, BibleVerseSegment } from "./types";
 import { TranscriptUtils, isBibleVerseSegment, isSermonSegment } from "./utils";
 
 
