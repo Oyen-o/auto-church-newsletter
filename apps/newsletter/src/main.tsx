@@ -1,8 +1,8 @@
 import { StrictMode } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import * as ReactDOM from 'react-dom/client';
-import App from './app/app';
-import Home from './app/Components/Routes/home';
+import SermonPage from './app/app';
+import HomePage from './app/Components/Routes/home';
 import Layout from './app/Components/Layout/layout';
 
 const root = ReactDOM.createRoot(
@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true, // This makes it the default route for "/"
-        element: <Home/>,
+        element: <HomePage/>,
       },
       {
-        path: 'newsletter',
-        element: <App/>,
+        path: 'newsletter/:videoId',
+        element: <SermonPage/>,
       },
     ]
   }

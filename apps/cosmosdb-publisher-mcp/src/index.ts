@@ -78,7 +78,7 @@ class CosmosDBPublisher {
     this.server.setRequestHandler(ListToolsRequestSchema, async () => ({
       tools: [
         {
-          name: 'upload_structured_transcript_to_cosmos_database',
+          name: 'upload_transcript_to_cosmos',
           description:
             'Upload a YouTube transcript JSON file to Azure Cosmos DB',
           inputSchema: {
@@ -157,7 +157,7 @@ class CosmosDBPublisher {
 
       // Try to create the document
       try {
-        const { resource } = await container.items.create(transcript);
+        const { resource} = await container.items.upsert(transcript);
 
         return {
           content: [
@@ -165,12 +165,13 @@ class CosmosDBPublisher {
               type: 'text',
               text:
                 `✅ Successfully uploaded transcript to Cosmos DB!\n\n` +
-                `📄 Document ID: ${resource.id}\n` +
-                `🎥 Video ID: ${resource.videoId}\n` +
-                `🏛️ Database: ${dbId}\n` +
-                `📦 Container: ${containerId}\n` +
-                `📊 Title: ${resource.title || 'N/A'}\n` +
-                `⛪ Church: ${resource.church || 'N/A'}`,
+                `📄 Document ID: ${resource!.id}\n` 
+                // `🎥 Video ID: ${resource.videoId}\n` +
+                // `🏛️ Database: ${dbId}\n` +
+                // `📦 Container: ${containerId}\n` +
+                // `📊 Title: ${resource.title || 'N/A'}\n` +
+                // `⛪ Church: ${resource.church || 'N/A'}`,
+
             },
           ],
         };
@@ -228,3 +229,17 @@ class CosmosDBPublisher {
 
 const server = new CosmosDBPublisher();
 server.run().catch(console.error);
+
+
+
+  // private setupToolHandlers() {
+  //   this.server.tool('upload transcript to cosmos database', "Uploads a structured transcript to a Cosmos DB database", {
+  //     filePath: z.string().describe('Absolute path to the transcript JSON file'),
+  //     accountName: z.string().optional().describe('Optional: Cosmos DB account name (defaults to ch-newsletter)'),
+  //     databaseName: z.string().optional().describe('Optional: Database name (defaults to Sermons)'),
+  //     containerName: z.string().optional().describe('Optional: Container name (defaults to StructuredTranscript)'),
+  //     apiKey: z.string().optional().describe('Optional: Cosmos DB API key (if not provided, uses COSMOS_KEY environment variable)'),
+  //   }, async (args: UploadTranscriptArgs) => {
+  //           return this.handleUploadTranscript(args);
+  //       });
+  //   }

@@ -1,13 +1,13 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 
-import App from './app';
+import SermonPage from './app';
 
 describe('App', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
       <BrowserRouter>
-        <App />
+        <SermonPage />
       </BrowserRouter>
     );
     expect(baseElement).toBeTruthy();
@@ -16,7 +16,7 @@ describe('App', () => {
   it('should have a greeting as the title', () => {
     const { getAllByText } = render(
       <BrowserRouter>
-        <App />
+        <SermonPage />
       </BrowserRouter>
     );
     expect(

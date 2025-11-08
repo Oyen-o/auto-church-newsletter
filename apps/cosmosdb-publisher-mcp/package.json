@@ -1,5 +1,5 @@
 {
-  "name": "@auto-church-newsletter/cosmosdb-publisher",
+  "name": "@auto-church-newsletter/cosmosdb-publisher-mcp",
   "version": "0.0.1",
   "private": true,
   "implicitDependencies": ["service-transcript-lib"],

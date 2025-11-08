@@ -5,7 +5,7 @@
       "path": "./apps/youtube-transcript-mcp"
     },
     {
-      "path": "./apps/cosmosdb-publisher"
+      "path": "./apps/cosmosdb-publisher-mcp"
     },
     {
       "path": "./apps/newsletter"

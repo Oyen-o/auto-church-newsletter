@@ -31,7 +31,7 @@ const Preaching: FC<PreachingProps> = ({ sermonSegment, videoId, seekTime,keyTop
         <h4>Topics</h4>
         <ul>
           {keyTopics?.map((topic:string, index:number) => (
-            <li key={index}>{topic} <span className='dash'> - </span></li>
+            <li key={index}>{topic} <span className='dash'> -- </span></li>
           )) ?? <li>No key topics available</li>}
         </ul>
       </div>
@@ -41,12 +41,16 @@ const Preaching: FC<PreachingProps> = ({ sermonSegment, videoId, seekTime,keyTop
       </div>
       <div className='plate scripture'>
         <h4>Scripture</h4>
-        <p>{sermonSegment?.mainText ? `${sermonSegment.mainText.book} ${sermonSegment.mainText.chapter}:${sermonSegment.mainText.verse ?? sermonSegment.mainText.verses}` : 'No main text available'}</p>
-        <ul>
-          {sermonSegment?.supportingTexts?.map((text, index) => (
-            <li key={index}>{`${text.book} ${text.chapter}:${text.verse ?? text.verses}`}</li>
-          )) ?? <li>No supporting texts available</li>}
-        </ul>
+        <p><strong>Main Text: </strong>{sermonSegment?.mainText ? `${sermonSegment.mainText.book} ${sermonSegment.mainText.chapter}:${sermonSegment.mainText.verse ?? sermonSegment.mainText.verses}` : 'No main text available'}</p>
+        <div className='supporting-texts'>
+          <strong>Supporting Texts: </strong>
+          <div>
+            {sermonSegment?.supportingTexts?.map((text, index) => (
+              <span key={index}>{`${text.book} ${text.chapter}:${text.verse ?? text.verses}`}</span>
+            )) ?? <li>No supporting texts available</li>}
+          </div>
+            
+        </div>
       </div>
       </div>
     </div>

@@ -7,13 +7,8 @@ interface AnnouncementProps {
 }
 
 const Announcement: React.FC<AnnouncementProps> = ({ announcementSegment }) => {
-  console.log(
-    'Rendering Announcement component with segment:',
-    announcementSegment
-  );
   return (
     <div>
-      <h3>Announcements</h3>
       <div className="announcement-wrapper" id="announcement">
         <h3>{announcementSegment?.category}</h3>
         <div>

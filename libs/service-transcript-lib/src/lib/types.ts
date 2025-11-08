@@ -6,8 +6,9 @@
 export interface Topics {
   date: string; // ISO date format: YYYY-MM-DD
   keyTopics: string[];
+  pastor?: string;
   serviceType: 'sunday_service' | 'midweek_service' | 'special_service' | 'conference' | 'retreat';
-  videoId: string; // Optional YouTube video ID
+  videoId: string;
 }
 
 /**

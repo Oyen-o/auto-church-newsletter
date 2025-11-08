@@ -112,6 +112,11 @@ export function getSermonDuration(transcript: ChurchServiceTranscript): number {
     return references;
   }
 
+  export function countAnnouncements(transcript: ChurchServiceTranscript): number {
+    const announcements = transcript.segments.filter(segment => segment.type === 'announcement');
+    return announcements.length;
+  }
+
 /**
  * Example usage of the analyzer
  */

@@ -4,6 +4,7 @@ import {
   AnnouncementSegment,
   BibleVerseSegment,
   ChurchServiceTranscript,
+  countAnnouncements,
 } from '@auto-church-newsletter/service-transcript';
 import { isBibleVerseSegment } from '@auto-church-newsletter/service-transcript';
 import Announcement from '../../Segments/announcement';
@@ -11,7 +12,6 @@ import Preaching from '../../Segments/preaching';
 import AsideCard from '../AsideCard/AsideCard';
 import { SegmentTimestamp } from '../timestamp/timestamp';
 
-let mockTranscript: ChurchServiceTranscript | null = null;
 
 interface SermonProps {
   serviceTranscript?: ChurchServiceTranscript;
@@ -68,8 +68,10 @@ const Sermon: FC<SermonProps> = ({ serviceTranscript }) => {
         {serviceTranscript ? (
           <>
             <div className="aside-left pop-card">
-              {printAnnouncements(serviceTranscript)}
-              <AsideCard name={serviceTranscript.pastor ?? '[COULDN\'T_PARSE]'} role="Pastor" imageUrl='./assets/pastor-1.png' />
+              <h3>Announcements</h3>
+
+              { countAnnouncements(serviceTranscript) > 0 ? printAnnouncements(serviceTranscript) : <p>No announcements Parsed</p>}
+              <AsideCard name={serviceTranscript.pastor ?? '[Not_Parsed]'} role="Pastor" imageUrl='./assets/pastor-1.png' />
             </div>
             <div className="sermon" id="sermon">
               {serviceTranscript?.segments.length ? (

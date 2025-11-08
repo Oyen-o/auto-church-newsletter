@@ -2,6 +2,8 @@
 /* Global styles for the newsletter application */
 // @import './assets/_variables.scss';
 @import './assets/_reboot.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
 
 :root {
   --color-light-bg-primary: rgb(238, 238, 238);
@@ -50,4 +52,34 @@ html {
     color: inherit;
     background-image: url('assets/icons/arrow_back_left_return_icon.svg');
   }
+
+  &.full-icon {
+      margin-top: -2px;
+    margin-right: 2px;
+    height: 12px;
+    width: 12px;
+    color: inherit;
+    background-image: url('assets/icons/diary_icon.svg');
+  }
 }
+
+.modal-header {
+  padding: 6px 10px !important;
+}
+
+.modal-content {
+  border-radius: 2px !important;
+}
+
+@keyframes bounceLeft {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+
+
+
